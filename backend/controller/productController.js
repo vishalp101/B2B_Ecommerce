@@ -145,7 +145,7 @@ exports.updateProduct = (req, res) => {
     })
   }
 
-  exports.deleteAllProduct = (req,res) => {
+  /*exports.deleteAllProduct = (req,res) => {
     productSchema.deleteMany()
     .then((data) => {
       if(!data){
@@ -168,4 +168,4 @@ exports.updateProduct = (req, res) => {
             error: err,
       })
     })
-  }
+  }*/

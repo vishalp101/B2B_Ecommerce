@@ -7,6 +7,6 @@ router.get("/admintable",admintablecontroller.getAllAdmintable)
 router.post("/admintable/:id",admintablecontroller.getAdmintableById);
 router.post("/admintable/:id",admintablecontroller.updateAdmintableById);
 router.delete("/admintable/:id",admintablecontroller.deleteAdmintableById);
-router.delete("/admintable",admintablecontroller.deleteAllAdmintable);
+//router.delete("/admintable",admintablecontroller.deleteAllAdmintable);
 
 module.exports = router

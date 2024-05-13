@@ -153,7 +153,7 @@ exports.updateCategoryById = (req, res) => {
   }
 
 
-  exports.deleteAllCategory = (req,res) => {
+  /*exports.deleteAllCategory = (req,res) => {
     categoryschema.deleteMany()
     .then((data) => {
       if(!data){
@@ -176,4 +176,4 @@ exports.updateCategoryById = (req, res) => {
             error: err,
       })
     })
-  }
+  }*/

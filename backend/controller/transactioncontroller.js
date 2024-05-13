@@ -147,7 +147,7 @@ exports.updateTransactionById = (req, res) => {
 
 
 
-  exports.deleteAllTransaction = (req,res) => {
+  /*exports.deleteAllTransaction = (req,res) => {
     transactionschema.deleteMany()
     .then((data) => {
       if(!data){
@@ -170,4 +170,4 @@ exports.updateTransactionById = (req, res) => {
             error: err,
       })
     })
-  }
+  }*/

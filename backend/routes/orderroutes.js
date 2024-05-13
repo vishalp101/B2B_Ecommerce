@@ -8,6 +8,6 @@ router.get("/order",ordercontroller.getAllorder)
 router.post("/order/:id",ordercontroller.getOrderById);
 router.post("/order/:id",ordercontroller.updateOrderById);
 router.delete("/order/:id",ordercontroller.deleteOrderById);
-router.delete("/order",ordercontroller.deleteAllOrder);
+//router.delete("/order",ordercontroller.deleteAllOrder);
 
 module.exports = router

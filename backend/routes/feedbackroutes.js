@@ -8,6 +8,6 @@ router.get("/feedback",feedbackcontroller.getAllFeedback)
 router.post("/feedback/:id",feedbackcontroller.getFeedbackById);
 router.post("/feedback/:id",feedbackcontroller.updateFeedbackById);
 router.delete("/feedback/:id",feedbackcontroller.deleteFeedbackById);
-router.delete("/feedback",feedbackcontroller.deleteAllFeedback);
+//router.delete("/feedback",feedbackcontroller.deleteAllFeedback);
 
 module.exports = router

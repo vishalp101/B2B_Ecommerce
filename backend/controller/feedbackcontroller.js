@@ -152,7 +152,7 @@ exports.updateFeedbackById = (req, res) => {
     })
   }
 
-  exports.deleteAllFeedback = (req,res) => {
+  /*exports.deleteAllFeedback = (req,res) => {
     feedbackschema.deleteMany()
     .then((data) => {
       if(!data){
@@ -175,4 +175,4 @@ exports.updateFeedbackById = (req, res) => {
             error: err,
       })
     })
-  }
+  }*/

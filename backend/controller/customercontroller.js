@@ -152,7 +152,7 @@ exports.updateCustomerById = (req, res) => {
     })
   }
 
-  exports.deleteAllCustomer = (req,res) => {
+  /*exports.deleteAllCustomer = (req,res) => {
     customerSchema.deleteMany()
     .then((data) => {
       if(!data){
@@ -175,4 +175,4 @@ exports.updateCustomerById = (req, res) => {
             error: err,
       })
     })
-  }
+  }*/

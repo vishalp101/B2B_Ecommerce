@@ -142,7 +142,7 @@ exports.updateOrderById = (req, res) => {
   }
 
 
-  exports.deleteAllOrder = (req,res) => {
+  /*exports.deleteAllOrder = (req,res) => {
     orderSchema.deleteMany()
     .then((data) => {
       if(!data){
@@ -165,4 +165,4 @@ exports.updateOrderById = (req, res) => {
             error: err,
       })
     })
-  }
+  }*/

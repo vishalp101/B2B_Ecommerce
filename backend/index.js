@@ -45,3 +45,6 @@ app.use("/category",categoryroutes);
 
 const subcategoryroutes = require("./routes/subcategoryroutes");
 app.use("/subcategory",subcategoryroutes);
+
+const statusroutes = require("./routes/statusroutes");
+app.use("/status",statusroutes);

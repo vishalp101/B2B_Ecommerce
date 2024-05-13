@@ -152,7 +152,7 @@ exports.updateAdmintableById = (req, res) => {
     })
   }
 
-  exports.deleteAllAdmintable = (req,res) => {
+  /*exports.deleteAllAdmintable = (req,res) => {
     admintableschema.deleteMany()
     .then((data) => {
       if(!data){
@@ -175,4 +175,4 @@ exports.updateAdmintableById = (req, res) => {
             error: err,
       })
     })
-  }
+  } */
