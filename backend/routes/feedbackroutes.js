@@ -3,6 +3,10 @@ const router = express.Router()
 
 const feedbackcontroller =require("../controller/feedbackcontroller");
 
+const validate = require("../utils/feedbackvalidation");
+const feedbackValidation = require("../middleware/zodmiddleware")
+
+
 router.post("/feedback",feedbackcontroller.Addfeedback)
 router.get("/feedback",feedbackcontroller.getAllFeedback)
 router.post("/feedback/:id",feedbackcontroller.getFeedbackById);
