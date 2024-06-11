@@ -152,6 +152,7 @@ exports.updateCustomerById = (req, res) => {
     })
   }
 
+
   /*exports.deleteAllCustomer = (req,res) => {
     customerSchema.deleteMany()
     .then((data) => {

@@ -9,7 +9,15 @@ const customerValidation = zod.object({
         customerAddress: zod.string()
         .max(100,"The maximum character of Admin address should be 100")
         .min(5,"The minimum character of Admin address should be 5"),
-        customerContactNo: zod.number(),
+        customerContactNo: zod.string().refine((val) => {
+            const indianPhoneNumberRegex = /^\+91\d{10}$/;
+            return indianPhoneNumberRegex.test(val);
+        },
+
+
+        {
+            message: "Invalid Indian phone num",
+        })
     }),
 });
 

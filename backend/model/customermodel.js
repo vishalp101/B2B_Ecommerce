@@ -1,4 +1,6 @@
 const mongoose = require("mongoose"); 
+const express = require('express');
+//const { string } = require("zod");
 const Schema = mongoose.Schema
 const customerSchema = new  Schema({
 
@@ -8,15 +10,19 @@ const customerSchema = new  Schema({
         //trim : true,
     },
     customerContactNo:{
-        type : Number,
-        required : true,
+        type : String,
+        //required : true,
         //trim : true,
     },
     customerEmail:{
         type : String,
-        required : true,
-        unique: true,
+        //required : true,
+        //unique: true,
         //trim : true,
+    },
+    upload:{
+        type :Buffer,
+        //require : true,
     },
     customerAddress:{
         type : String,
@@ -36,5 +42,4 @@ const customerSchema = new  Schema({
     timeStamps : true,
 }
 )
-
 module.exports = mongoose.model('Customer',customerSchema)

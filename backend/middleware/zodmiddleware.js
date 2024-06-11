@@ -1,5 +1,4 @@
 //const BadRequest = require('http-errors');
-const zod = require("zod");
 //const app = BadRequest();
 //const BadRequest = true;
 //const userSchema = require('./schema');
@@ -27,6 +26,7 @@ const zod = require("zod");
 //};
 
 //module.exports = validate
+const zod = require("zod");
 const validate = (schema) => async (req, res, next) => {
     try {
       await schema.parseAsync({
